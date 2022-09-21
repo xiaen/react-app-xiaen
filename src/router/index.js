@@ -5,6 +5,7 @@ import Todo from '../pages/tabBarPage/todo'
 import Message from '../pages/tabBarPage/message'
 import PersonalCenter from '../pages/tabBarPage/personalCenter'
 import Detail from '../pages/detail';
+import ShoppingCart from '../pages/shoppingCart/shoppingCart';
 function RouterCom() {
   return (
     <>
@@ -18,6 +19,7 @@ function RouterCom() {
             <Route path='*' element={<div>404</div>}></Route>
           </Route>
           <Route exact path='/detail' element={<Detail />}></Route>
+          <Route exact path='/shoppingCart' element={<ShoppingCart />}></Route>
         </Routes>
       </Router>
     </>
